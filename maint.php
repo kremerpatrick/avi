@@ -1,7 +1,7 @@
 <?php
 $nowtime = time();
 $hostname = gethostname();
-echo $hostname;
+echo $hostname . ' ';
 $hostid = substr($hostname,-1);
 #echo $hostid % 2;
 $mins = date('i',$nowtime);
