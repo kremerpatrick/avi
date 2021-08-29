@@ -1,8 +1,11 @@
 <?php
 $nowtime = time();
-#echo $nowtime;
+$hostname = gethostname();
+echo $hostname;
+$hostid = substr($hostname,-1);
+#echo $hostid % 2;
 $mins = date('i',$nowtime);
-if ($mins %2 == 0 ) {
+if ($mins %2 == $hostid ) {
         echo "OK";
 }
 else {
